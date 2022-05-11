@@ -210,7 +210,7 @@ input[type="checkbox"]:checked:after {
   left: 0;
   z-index: 200;
   animation: appear .25s forwards;
-  animation-delay: 3s;
+  animation-delay: 20s;
   background: conic-gradient(white 90deg, #f01381 90deg 180deg, white 180deg 270deg, #f71b1b 270deg) top left/60px 60px repeat;
 }
 
