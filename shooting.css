@@ -3,7 +3,7 @@
 }
 
 h1 {
-  font-size: 1.4em;
+  font-size: 18px;
 }
 
 body {
@@ -11,7 +11,8 @@ body {
   text-align: center;
   background: #e9b58b;
   font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
-  color: #333;
+  color:coral;
+  overflow: hidden;
 }
 
 input:checked {
@@ -22,20 +23,19 @@ input:checked {
   content: counter(game);
 }
 
-h2 {
-  font-size: 1em;
-  margin: -.5em auto 3em;
-  font-weight: 400;
-}
+
 
 .total-count {
-  font-size: 1.75em;
+  font-size: 20px;
   position: absolute;
-  top: 1.75em;
+  top: 22px;
   width: 100%;
   left: 0;
   text-align: center;
   z-index: 300;
+  background-color: olive;
+  color: black;
+
 }
 
 .game-area {
@@ -47,98 +47,105 @@ h2 {
   min-height: 550px;
   max-height: 700px;
   margin: 0 auto;
+  margin-top: 100px;
   padding-left: 0;
+  cursor: url("./img/bow.png"), auto;
+
 }
 
 li {
-  width: calc(33% - .5em);
-  margin-bottom: 1em;
-  height: 10em;
+  width: calc(33% - 10px);
+  margin-bottom: 16px;
+  height: 150px;
   list-style: none;
   position: relative;
   outline: 4px solid white;
   background: #64ddf3;
+  overflow: hidden;
 }
 
 li:nth-child(1) input {
-  animation-duration: 2.91982s;
+  animation-duration: 4.86563s;
+  background: red;
+
 }
 
 li:nth-child(2) input {
-  animation-duration: 1.34521s;
+  animation-duration: 4.95142s;
+  background: blue;
+
 }
 
 li:nth-child(3) input {
-  animation-duration: 2.43694s;
+  animation-duration: 1.418s;
+  background: green;
+
 }
 
 li:nth-child(4) input {
-  animation-duration: 3.7677s;
+  animation-duration: 1.98332s;
+  background: crimson;
+
 }
 
 li:nth-child(5) input {
-  animation-duration: 3.47217s;
+  animation-duration: 1.38138s;
+  background: olive;
+
 }
 
 li:nth-child(6) input {
-  animation-duration: 4.8696s;
+  animation-duration: 4.88206s;
+  background: violet;
+
 }
 
 li:nth-child(7) input {
-  animation-duration: 0.29024s;
+  animation-duration: 1.82007s;
+  background: cornsilk;
+
 }
 
 li:nth-child(8) input {
-  animation-duration: 3.61575s;
+  animation-duration: 3.59585s;
+  background: firebrick;
+
 }
 
 li:nth-child(9) input {
-  animation-duration: 0.44193s;
+  animation-duration: 2.51349s;
+  background: rebeccapurple;
+
 }
 
-li:nth-child(10) input {
-  animation-duration: 0.7004s;
-}
 
-li:nth-child(11) input {
-  animation-duration: 3.23446s;
-}
 
-li:nth-child(12) input {
-  animation-duration: 0.21252s;
-}
 
-li:nth-child(13) input {
-  animation-duration: 3.08923s;
-}
-
-li:nth-child(14) input {
-  animation-duration: 3.81455s;
-}
 
 input[type="checkbox"] {
   width: 50px;
   height: 50px;
   position: absolute;
-  cursor: crosshair;
-  background: red;
-  border-radius: 51%;
+  border-radius: 60%;
+  cursor: url("./img/bow.png"), auto;
   display: block;
   left: 0;
   right: 0;
   text-align: center;
   margin: 0 auto;
   appearance: none;
-  border: 6px solid red;
+  border: 6px solid;
+  border-color: black;
   animation: hide-target infinite alternate ease-in-out;
   z-index: 1;
+
 }
 
 input[type="checkbox"]:before {
   content: '';
   display: block;
-  background-color: black;
-  height: 50%;
+  background-color: rgb(235, 19, 19);
+  height: 120%;
   width: 6px;
   position: absolute;
   left: 0;
@@ -168,10 +175,10 @@ input[type="checkbox"]:checked:after {
   font-weight: 600;
 }
 
-.shield {
-  background: #724c20;
+.cover{
+  background: #41df56;
   width: 100%;
-  height: 60%;
+  height: 40%;
   margin: 0 auto;
   bottom: 0;
   left: 0;
@@ -197,20 +204,21 @@ input[type="checkbox"]:checked:after {
   height: 100%;
   width: 100%;
   display: block;
-  background: white;
   pointer-events: all;
   position: absolute;
   top: -100%;
   left: 0;
   z-index: 200;
   animation: appear .25s forwards;
-  animation-delay: 15s;
+  animation-delay: 3s;
   background: conic-gradient(white 90deg, #f01381 90deg 180deg, white 180deg 270deg, #f71b1b 270deg) top left/60px 60px repeat;
 }
 
 .game-over h1 {
-  padding: 1em 0 3.5em;
-  background: white;
+  padding:10px ;
+  margin-top: 200px;
+  background-color: olive;
+  color: black;
 }
 
 @keyframes appear {
@@ -227,13 +235,10 @@ input[type="checkbox"]:checked:after {
 .play-again {
   background: white;
   color: #20c0ff;
-  padding: .5em 1em;
-  font-size: 2.5em;
+  padding: 10px 15px;
+  font-size: 20px;
   font-weight: 700;
+  text-decoration: none;
 }
 
-small a {
-  margin-bottom: 2em;
-  display: block;
-  color: #222;
-}
+
